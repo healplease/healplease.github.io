@@ -2,6 +2,9 @@
 {% block html_attribs %}
 lang="en"
 {% endblock %}
+{% block title %}
+{{ title }} - healplease
+{% endblock %}
 {% block head %}
 {{ super() }}
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
@@ -9,6 +12,25 @@ lang="en"
 {% block styles %}
 {{ super() }}
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<style>
+    .btn-link.nav-link {
+        border-radius: 50px;
+        font-size: larger;
+    }
+    .btn-link.nav-link:hover {
+        background-color: #60656d;
+        color: #f8f9fa;
+    }
+    .btn-like {
+        text-decoration: none !important;
+        color: inherit !important;
+        transition: .5ms;
+        padding: 0%;
+    }
+    .btn-like:hover {
+        color: inherit !important;
+    }
+</style>
 {% endblock %}
 {% block scripts %}
 {{ super() }}

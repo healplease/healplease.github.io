@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% from "macro/render_field.html" import render_field %}
+
+{% block page %}
+    <div class="row">
+        <div class="col-sm-12">
+            <form method="POST" action="{{ url_for('main.messages') }}" class="form">
+                <div class="row">
+                    <div class="col-sm-12">
+                        {{ form.csrf_token }}
+                        {{ render_field(form.message, class="form-control", placeholder=form.message.name|capitalize + "*") }}
+                    </div>
+                    <div class="col-sm-3">
+                        {{ render_field(form.name, class="form-control", placeholder=form.name.name|capitalize, value=author.name) }}
+                    </div>
+                    <div class="col-sm-9">
+                        {{ form.submit(class="btn btn-block btn-primary") }}
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {% if messages.items %}
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="d-flex justify-content-center">
+                <h2 class="pt-3">
+                    Messages
+                </h2>
+            </div>
+        </div>
+        {% for message in messages.items %}
+        <div class="col-sm-12">
+            <div>
+                <div class="card-body">
+                    <div style="color: {{ message.author.color }};"><span class="font-weight-bold">{{ message.author.name or "Anonymous" }}</span></div>
+                    <div>{{ message.message }}</div>
+                    <div class="d-flex justify-content-end" id="likes-{{ message.id }}">
+                        {% if request.remote_addr not in message.likes %}
+                        <button class="btn btn-link btn-like" onclick="reactToMessage{{ message.id }}(like=true)" title="Like">
+                            🖤 {{ message.likes_count }} </button>
+                        {% else %}
+                        <button class="btn btn-link btn-like" onclick="reactToMessage{{ message.id }}(like=false)" title="Unlike">
+                            💖 {{ message.likes_count }}</button>
+                        {% endif %}
+                    </div>
+                </div>
+                <script>
+                    function reactToMessage{{ message.id }}( like ) {
+                        $.ajax( {
+                            url: like ? 
+                            "{{ url_for('main.like_message', id=message.id, page=messages.page) }}" : 
+                            "{{ url_for('main.dislike_message', id=message.id, page=messages.page) }}",
+                            type: "POST",
+                            success: function( data ) {
+                                let parser = new DOMParser();
+                                let newHTML = parser.parseFromString( data, "text/html" );
+                                newHTML.innerHTML = parser.parseFromString( data, "text/html" );
+                                console.log(newHTML.querySelector("#likes-{{ message.id }}").innerHTML);
+                                $("#likes-{{ message.id }}").html( newHTML.querySelector("#likes-{{ message.id }}").innerHTML );
+                            }
+                        } );
+                    };
+                </script>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    {% else %}
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="d-flex justify-content-center justify-content-middle">
+                <h2 class="pt-5">
+                    No messages yet!
+                </h2>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+
+{% endblock %}
