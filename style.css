@@ -25,3 +25,12 @@ main {
     height: calc(90% - 3.25em);
     overflow-y: scroll;
 }
+
+@media (max-width: 575.98px) {
+    .custom-scrollbar {
+        height: calc(90% - 4em);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 0em;
+    }
+}
