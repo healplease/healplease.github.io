@@ -49,7 +49,19 @@ main {
     overflow-x: hidden;
 }
 
+.cookie-consent{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 120;
+}
+
 @media (max-width: 575.98px) {
+    .cookie-consent {
+        width: 100%;
+    }
+
     main {
         height: 85%;
     }
@@ -59,13 +71,6 @@ main {
     .custom-scrollbar::-webkit-scrollbar {
         width: 0em;
     }
-}
-
-.cookie-consent{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 120;
 }
 
 :root {

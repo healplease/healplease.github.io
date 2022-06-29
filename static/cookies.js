@@ -29,12 +29,12 @@ function clearCookies() {
     document.cookie = "acceptCookies=0;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
 }
 
-document.getElementById("cookie-consent").style.display = getCookie("acceptCookies") == "" ? "block" : "none";
-document.getElementById("cookie-consent-accept").addEventListener("click", function() {
-    setCookie("acceptCookies", 1);
-    document.getElementById("cookie-consent").style.display = "none";
-});
-document.getElementById("cookie-consent-reject").addEventListener("click", function() {
-    setCookie("acceptCookies", -1);
-    document.getElementById("cookie-consent").style.display = "none";
-});
+// document.getElementById("cookie-consent").style.display = getCookie("acceptCookies") == "" ? "block" : "none";
+// document.getElementById("cookie-consent-accept").addEventListener("click", function() {
+//     setCookie("acceptCookies", 1);
+//     document.getElementById("cookie-consent").style.display = "none";
+// });
+// document.getElementById("cookie-consent-reject").addEventListener("click", function() {
+//     setCookie("acceptCookies", -1);
+//     document.getElementById("cookie-consent").style.display = "none";
+// });
