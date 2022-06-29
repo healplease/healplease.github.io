@@ -27,8 +27,11 @@ main {
 }
 
 @media (max-width: 575.98px) {
+    main {
+        height: 87%;
+    }
     .custom-scrollbar {
-        height: calc(90% - 4em);
+        height: calc(87% - 3.5em);
     }
     .custom-scrollbar::-webkit-scrollbar {
       width: 0em;
