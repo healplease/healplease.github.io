@@ -18,9 +18,6 @@
                 Please enable JavaScript in your settings to see the contents of this page.
             </p>
         </noscript>
-        <script>
-            window.location.replace("/en/index.html");
-        </script>
 
         <script crossorigin="anonymous"
         src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
@@ -28,5 +25,10 @@
         <script crossorigin="anonymous"
         src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"></script>
+        <script src="../static/cookies.js"></script>
+        <script>
+            let lang = getCookie("lang", "en");
+            window.location.replace(`/${lang}/index.html`);
+        </script>
     </body>
 </html>

@@ -61,6 +61,13 @@ main {
     }
 }
 
+.cookie-consent{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 120;
+}
+
 :root {
 	/*
 	line left
