@@ -1,0 +1,27 @@
+.masthead-brand a {
+    text-decoration: none;
+}
+
+.smaller-letters {
+    font-size: .85em;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 0.5em;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.05);
+
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2));
+}
+
+main {
+    max-height: calc(90%);
+}
+
+.custom-scrollbar {
+    height: calc(90% - 3.25em);
+    overflow-y: scroll;
+}
