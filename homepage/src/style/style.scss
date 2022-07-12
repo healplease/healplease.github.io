@@ -1,0 +1,56 @@
+a, a:focus, a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.card {
+    p, h1, h2, h3, h4, h5, h6 {
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+}
+
+:root {
+	/*
+	line left
+	line right
+	line bottom
+	line top
+	arrow left
+	arrow right
+	arrow diagonal
+	*/
+	--icon-external-link: url('data:image/svg+xml,\
+	<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"> \
+		<g style="stroke:rgb(180,180,180);stroke-width:1"> \
+			<line x1="5" y1="5" x2="5" y2="14" /> \
+			<line x1="14" y1="9" x2="14" y2="14" /> \
+			<line x1="5" y1="14" x2="14" y2="14" /> \
+			<line x1="5" y1="5" x2="9" y2="5"  /> \
+			<line x1="10" y1="2" x2="17" y2="2"  /> \
+			<line x1="17" y1="2" x2="17" y2="9" /> \
+			<line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.5" /> \
+		</g> \
+	</svg>');
+}
+
+a[target="_blank"]::after {
+	content: '';
+	background: no-repeat var(--icon-external-link);
+	padding-right: 1.5rem;
+}
+a:not([href])::after {
+    content: '';
+    background: none;
+    padding-right: 0;
+}

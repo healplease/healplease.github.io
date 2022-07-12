@@ -1,0 +1,17 @@
+.navbar-brand {
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 1.75rem;
+    a {
+        text-decoration: none;
+    }
+}
+
+@media(max-width:576.9px){
+    .navbar-collapse{
+        position: absolute;
+        left: 0;
+        top: 3.5rem;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,325 @@
+{
+    "availableLangs": ["en", "ua"],
+    "availableTabs": ["home", "experience"],
+    "content": {
+        "en": {
+            "name": "English - EN",
+            "langTabName": "Language",
+            "footerText": "",
+            "tabs": {
+                "home": {
+                    "name": "Home",
+                    "headline": "Oleksii Hava",
+                    "subHeadline": "Python Developer",
+                    "summary": {
+                        "title": "Summary",
+                        "text": "Hi! My name is Oleksii and I program for a living. Development in Python is my passion since 2017 when I wrote my first Telegram bot for friends chat. Since then I invented ton of bicycles, shot myself in the foot a thousand times, and eventually led myself to the title of Strong Middle Python Developer at Softserve."
+                    },
+                    "skills": {
+                        "title": "Skills & Tech Stack",
+                        "categories": [
+                            {
+                                "name": "Languages & Tech",
+                                "skills": [
+                                    "Python", 
+                                    "HTML5",
+                                    "CSS3",
+                                    "JavaScript",
+                                    "REST API",
+                                    "Kafka",
+                                    "XML / JSON / YAML",
+                                    "Technical Documentation"
+                                ]
+                            },
+                            {
+                                "name": "CI/CD & Deployment",
+                                "skills": [
+                                    "Google Cloud Platform",
+                                    "AWS Lambda / Serverless",
+                                    "Azure Devops",
+                                    "GitHub Actions",
+                                    "Jenkins"
+                                ]
+                            },
+                            {
+                                "name": "Frameworks & Libraries",
+                                "skills": [
+                                    "Flask",
+                                    "Django",
+                                    "Netbox",
+                                    "Wagtail",
+                                    "React",
+                                    "jQuery"
+                                ]
+                            },
+                            {
+                                "name": "Databases",
+                                "skills": [
+                                    "MondoDB",
+                                    "MySQL",
+                                    "PostgresQL"
+                                ]
+                            },
+                            {
+                                "name": "Development Tools",
+                                "skills": [
+                                    "VSCode",
+                                    "Git",
+                                    "Shell"
+                                ]
+                            },
+                            {
+                                "name": "Virtualization Tools",
+                                "skills": [
+                                    "Docker"
+                                ]
+                            },
+                            {
+                                "name": "Testing Tools",
+                                "skills": [
+                                    "Pytest",
+                                    "unittest",
+                                    "tox",
+                                    "Selenium",
+                                    "Pa11y"
+                                ]
+                            },
+                            {
+                                "name": "Operating Systems",
+                                "skills": [
+                                    "Linux",
+                                    "Windows"
+                                ]
+                            },
+                            {
+                                "name": "Methodologies",
+                                "skills": [
+                                    "Scrum",
+                                    "Agile",
+                                    "Kanban",
+                                    "Waterfall"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "experience": {
+                    "name": "Experience",
+                    "headline": "Oleksii Hava",
+                    "subHeadline": "Work Experience",
+                    "companies": [
+                        {
+                            "name": "Softserve",
+                            "projects": [
+                                {
+                                    "name": "Cityfibre",
+                                    "url": "https://cityfibre.com/",
+                                    "term": "8 months",
+                                    "position": "Middle Python Developer",
+                                    "description": "Cityfibre is one of the biggest internet providers in the United Kingdom. During my work as the part of Inventory Management Squad I was providing different solutions to extend the main product - NetBox. It is a Django app to manage devices, racks and sites. My main achievement is developing a plugin for NetBox, that copies site and all its descendants, like racks, devices, components and cables in background with full reporting."
+                                },
+                                {
+                                    "name": "BDUK",
+                                    "url": "https://gigabitvoucher.culture.gov.uk/",
+                                    "term": "8 months",
+                                    "position": "Middle Python Developer",
+                                    "description": "BDUK stands for Building Digital UK and is a part of government structure of DCMS in the United Kingdom. During my work on this project our main goal was developing the Eligibility Checker system for the rural areas of the UK, which would allow people from this areas to receive a voucher and get access to the fast broadband connection."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "KeyUA",
+                            "projects": [
+                                {
+                                    "name": "Zain",
+                                    "url": "https://www.zain.com/en",
+                                    "term": "5 months",
+                                    "position": "Middle Python Developer",
+                                    "description": "Zain is the mobile telecommunications company that opearing in the Middle East and North Africa. During my work with Zain the main task was migrating the data from old Zain site to new one as well as setting up the Wagtail Admin pages."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Absolutist",
+                            "projects": [
+                                {
+                                    "name": "Leagues System",
+                                    "url": null,
+                                    "term": "18 months",
+                                    "position": "Junior Python Developer",
+                                    "description": "Absolutist is the game company in Ukraine that primarly targets the mobile market, but its games also deployed on Facebook, and Steam. Leagues is a system of ratings that allows people play and move through different leagues and obtain rewards. The system backend was implemented by me, using Flask and REST API principles. In the same time I was managing the CI/CD system (Jenkins) for our apps."
+                                },
+                                {
+                                    "name": "Twilight Town & Crime City Detective",
+                                    "url": "https://play.google.com/store/apps/details?id=com.absolutist.twilighttown",
+                                    "term": "12 months",
+                                    "position": "Game Developer",
+                                    "description": "Absolutist is the game company in Ukraine that primarly targets the mobile market, but its games also deployed on Facebook, and Steam. Two projects under the lead of one game designer is the  genre of point-and-click were developed by me. I continued updating the projects after I moved to the Python Developer position."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "ua": {
+            "name": "Українська - UA",
+            "langTabName": "Мова",
+            "footerText": "",
+            "tabs": {
+                "home": {
+                    "name": "Резюме",
+                    "headline": "Олексій Гава",
+                    "subHeadline": "Python Developer",
+                    "summary": {
+                        "title": "Про мене",
+                        "text": "Привіт! Мене звуть Олексій, і я заробляю на життя програмуванням. Розробка додатків на Python стала моєю пристрастю в 2017, коли я написав свого першого Телеграм-бота для чату з друзями. З тих пір я винайшов велику кількість велосипедів, прострілив собі ногу тисячу разів, і врешті-решт досяг титулу Strong Middle Python Developer в Softserve."
+                    },
+                    "skills": {
+                        "title": "Навички і стек технологій",
+                        "categories": [
+                            {
+                                "name": "Мови програмування і технології",
+                                "skills": [
+                                    "Python", 
+                                    "HTML5",
+                                    "CSS3",
+                                    "JavaScript",
+                                    "REST API",
+                                    "Kafka",
+                                    "XML / JSON / YAML",
+                                    "Технічна документація"
+                                ]
+                            },
+                            {
+                                "name": "CI/CD і деплоймент",
+                                "skills": [
+                                    "Google Cloud Platform",
+                                    "AWS Lambda / Serverless",
+                                    "Azure Devops",
+                                    "GitHub Actions",
+                                    "Jenkins"
+                                ]
+                            },
+                            {
+                                "name": "Фреймворки і бібліотеки",
+                                "skills": [
+                                    "Flask",
+                                    "Django",
+                                    "Netbox",
+                                    "Wagtail",
+                                    "React",
+                                    "jQuery"
+                                ]
+                            },
+                            {
+                                "name": "Бази даних",
+                                "skills": [
+                                    "MondoDB",
+                                    "MySQL",
+                                    "PostgresQL"
+                                ]
+                            },
+                            {
+                                "name": "Інструменти розробки",
+                                "skills": [
+                                    "VSCode",
+                                    "Git",
+                                    "Shell"
+                                ]
+                            },
+                            {
+                                "name": "Інструменти віртуалізації",
+                                "skills": [
+                                    "Docker"
+                                ]
+                            },
+                            {
+                                "name": "Інструменти тестування",
+                                "skills": [
+                                    "Pytest",
+                                    "unittest",
+                                    "tox",
+                                    "Selenium",
+                                    "Pa11y"
+                                ]
+                            },
+                            {
+                                "name": "Операційні системи",
+                                "skills": [
+                                    "Linux",
+                                    "Windows"
+                                ]
+                            },
+                            {
+                                "name": "Методології",
+                                "skills": [
+                                    "Scrum",
+                                    "Agile",
+                                    "Kanban",
+                                    "Waterfall"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "experience": {
+                    "name": "Досвід",
+                    "headline": "Олексій Гава",
+                    "subHeadline": "Досвід роботи",
+                    "companies": [
+                        {
+                            "name": "Softserve",
+                            "projects": [
+                                {
+                                    "name": "Cityfibre",
+                                    "url": "https://cityfibre.com/",
+                                    "term": "8 місяців",
+                                    "position": "Middle Python Developer",
+                                    "description": "Cityfibre - це один з найбільших інтернет-провайдерів в  Сполученому Королівстві. Впродовж моєї роботи в складі  Inventory Management Squad я впроваджував різні рішення для розширення нашого продукту - NetBox. Це веб-додаток на Django для менеджменту приладдя, стійок та локацій. Моїм головним досягненням є розробка плагіну для NetBox, що копіює локацію і всіх її потомків - стійки, прилади, компоненти і кабелі в фоновому режимі з повним звітуванням."},
+                                {
+                                    "name": "BDUK",
+                                    "url": "https://gigabitvoucher.culture.gov.uk/",
+                                    "term": "8 місяців",
+                                    "position": "Middle Python Developer",
+                                    "description": "BDUK розшифровується як Building Digital UK і є частиною державної структури DCMS в Сполученому Королівстві. Впродовж моєї роботи на цьому проекті нашою основною ціллю була розробка системи Eligibility Checker для сільських районів СК, яка дозволила б людям з цих місцин отримати ваучер і доступ до швидкісного інтернет-зв'язку."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "KeyUA",
+                            "projects": [
+                                {
+                                    "name": "Zain",
+                                    "url": "https://www.zain.com/en",
+                                    "term": "5 місяців",
+                                    "position": "Middle Python Developer",
+                                    "description": "Zain - це оператор мобільних телекомунікацій, що оперує на Близькому Сході і в Північній Африці. Впродовж моєї роботи з Zain моєю головною задачою були міграція даних зі старого сайту на новий, а також налаштування адмінських сторінок з CMS Wagtail."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Absolutist",
+                            "projects": [
+                                {
+                                    "name": "Leagues System",
+                                    "url": null,
+                                    "term": "18 місяців",
+                                    "position": "Junior Python Developer",
+                                    "description": "Absolutist - це ігрова компанія, що фокусується на розробці мобільних ігор, але її проекти також можна знайти в Facebook i Steam. Ліги - це система рейтингу, що дозволяє людям грати і таким чином рухатися між разниим лігами і отримувати відповідні винагороди. Серверна частина ліг була повінстю реалізована мною з використанням Flask і принципів REST API. В той же час я був відповідальним за CI/CD систему компанії - Jenkins."
+                                },
+                                {
+                                    "name": "Twilight Town & Crime City Detective",
+                                    "url": "https://play.google.com/store/apps/details?id=com.absolutist.twilighttown",
+                                    "term": "12 місяців",
+                                    "position": "Game Developer",
+                                    "description": "Absolutist - це ігрова компанія, що фокусується на розробці мобільних ігор, але її проекти також можна знайти в Facebook i Steam. Два проекти під керівництвом одного гейм-дизайнера в жанрі пошуків прихованих об'єктів розроблялися і вдосконалювалися мною. Я продовжив підтримку і оновлення цих проектів, навіть коли перейов на позицію Python Developer."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.nav-link {
+    cursor: pointer;
+    color: #aaa;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.25rem;
+    text-decoration-color: #aaa;
+    transition: 0.25s;
+    &:hover, &:focus, &.active {
+        color: #fff;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+        text-decoration-thickness: 0.25rem;
+        text-decoration-color: #fff;
+    }
+}
+
+.nav-item {
+    margin-top: -0.5rem;
+}
+
+.dropdown-item {
+    cursor: pointer;
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}
