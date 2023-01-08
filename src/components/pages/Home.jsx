@@ -18,12 +18,19 @@ const descriptions = [
             </Title>
             <Paragraph>
                 I am developer.
-            </Paragraph>
-            <Paragraph>
                 I like Python and React.
             </Paragraph>
+            <Title level={5} style={{ textAlign: "center" }}>
+                Things I like
+            </Title>
             <Paragraph>
-                I like to play guitar.
+                Playing guitar, video games and D&D.
+            </Paragraph>
+            <Title level={5} style={{ textAlign: "center" }}>
+                Skill Stack
+            </Title>
+            <Paragraph>
+                Python, React, PostgreSQL, MongoDB, Azure, GCP, Windows, Linux, Docker.
             </Paragraph>
         </Typography>
     },
@@ -34,7 +41,7 @@ const descriptions = [
                 Hello, I am Oleksii!
             </Title>
             <Paragraph>
-                I'm a Full Stack Developer.
+                I am a full-stack software developer.
             </Paragraph>
             <Paragraph>
                 I mostly work with Python (Flask/Django) and ReactJS.
@@ -78,7 +85,7 @@ const descriptions = [
                 <small style={{color: "#888"}}>Pronounced as `O-Le-Xi Ha-Va`.</small>
             </Paragraph>
             <Paragraph>
-                I currently work as Full Stack Developer at Honeycomb Software.
+                I currently work as Full-Stack Software Developer at Honeycomb Software.
                 I have more than 5 years of experience in software development, which
                 includes 1.5 years of experience in game development, and remaining 4 years
                 in web development.
@@ -171,10 +178,12 @@ const Home = () => {
             <Content
                 style={{
                     background: darkMode.on ? "#02101d" : "white",
-                    padding: "1rem"
+                    padding: "1rem",
                 }}
             >
                 <Card
+                    headStyle={{ background: darkMode.on ? "#020f34" : "white" }}
+                    bodyStyle={{ background: darkMode.on ? "#020622" : "white" }}
                     title={<div style={{
                         display: "flex",
                         justifyContent: "center",
@@ -196,7 +205,13 @@ const Home = () => {
                     </div>}
                 >
                     <div style={{ display: "flex", justifyContent: "center" }}>
-                        <div style={{ width: 768 }}>
+                        <div style={{
+                            width: 800,
+                            background: "#eee",
+                            padding: "2em",
+                            paddingTop: "1em",
+                            borderRadius: "1em",
+                        }}>
                             {descriptions[description].description}
                         </div>
                     </div>
