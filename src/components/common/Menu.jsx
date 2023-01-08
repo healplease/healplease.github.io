@@ -1,12 +1,11 @@
 import React from "react";
 
 import { Menu as ANTDMenu } from "antd";
-import { HomeOutlined, SmileOutlined, LaptopOutlined, SettingOutlined } from "@ant-design/icons";
+import { HomeOutlined, LaptopOutlined, SettingOutlined } from "@ant-design/icons";
 import { Link, useLocation } from "react-router-dom";
 
 import DarkModeSwitch from "./DarkModeSwitch";
 import useDarkMode from "../../hooks/useDarkMode";
-
 
 const items = [
     {
@@ -18,11 +17,6 @@ const items = [
         key: "2",
         icon: <LaptopOutlined />,
         label: <Link to="/experience">Experience</Link>,
-    },
-    {
-        key: "3",
-        icon: <SmileOutlined />,
-        label: <Link to="/me">About Me</Link>,
     },
     {
         key: "4",
@@ -37,7 +31,6 @@ const items = [
         ],
     }
 ];
-
 
 const Menu = ({ collapsed }) => {
     const darkMode = useDarkMode();

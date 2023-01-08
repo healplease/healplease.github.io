@@ -3,7 +3,7 @@ import { createBrowserRouter, createRoutesFromElements, Route } from "react-rout
 
 import Home from "../pages/Home.jsx";
 import Experience from "../pages/Experience.jsx";
-import AboutMe from "../pages/AboutMe.jsx";
+// import AboutMe from "../pages/AboutMe.jsx";
 import Error from "../pages/Error.jsx";
 import BasicLayout from "./BasicLayout.jsx";
 import MainLayout from "./MainLayout.jsx";
@@ -13,7 +13,7 @@ const router = createBrowserRouter(createRoutesFromElements(
         <Route element={<MainLayout />}>
             <Route index element={<Home />} />
             <Route path="experience" element={<Experience />} />
-            <Route path="me" element={<AboutMe />} />
+            {/* <Route path="me" element={<AboutMe />} /> */}
         </Route>
     </Route>
 ));
