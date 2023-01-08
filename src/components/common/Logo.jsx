@@ -43,7 +43,7 @@ const Logo = ({ collapsed }) => {
         <div style={{
             fontFamily: "Consolas, Courier new, monospace",
             textAlign: "center",
-            padding: "0.5rem",
+            padding: "0.45rem",
             fontSize: "2rem",
             height: "3rem"
         }}>
