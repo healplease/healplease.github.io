@@ -5,7 +5,6 @@ import Menu from "./Menu";
 import Logo from "./Logo";
 import { useCollapse } from "../../hooks/useCollapse";
 import useDarkMode from "../../hooks/useDarkMode";
-import DarkModeSwitch from "./DarkModeSwitch";
 
 const { Sider } = Layout;
 
@@ -16,18 +15,13 @@ const Sidebar = () => {
 
     return (
         <Sider
-            style={{
-                background: darkMode.on ? "#001529" : "white",
-            }}
+            theme={darkMode.on ? "dark" : "light"}
             collapsible
             collapsed={collapsed}
             onCollapse={toggleCollapsed}
         >
             <Logo collapsed={collapsed} />
             <Menu collapsed={collapsed} />
-            <div style={{ padding: "0 1rem" }}>
-                <DarkModeSwitch />
-            </div>
         </Sider>
     );
 }

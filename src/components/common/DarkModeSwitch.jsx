@@ -8,6 +8,9 @@ const DarkModeSwitch = () => {
 
     return (
         <Switch
+            style={{
+                marginRight: "0.5rem",
+            }}
             checked={darkMode.on}
             onChange={darkMode.toggle}
             size="small"

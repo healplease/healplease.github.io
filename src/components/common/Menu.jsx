@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Menu as ANTDMenu } from "antd";
-import { HomeOutlined, UserOutlined, LaptopOutlined } from "@ant-design/icons";
+import { HomeOutlined, SmileOutlined, LaptopOutlined, SettingOutlined } from "@ant-design/icons";
 import { Link, useLocation } from "react-router-dom";
 
 import DarkModeSwitch from "./DarkModeSwitch";
@@ -21,13 +21,25 @@ const items = [
     },
     {
         key: "3",
-        icon: <UserOutlined />,
+        icon: <SmileOutlined />,
         label: <Link to="/me">About Me</Link>,
     },
+    {
+        key: "4",
+        icon: <SettingOutlined />,
+        label: "Appearance",
+        children: [
+            {
+                key: "4-1",
+                icon: <DarkModeSwitch />,
+                label: <span>Dark Mode</span>,
+            },
+        ],
+    }
 ];
 
 
-const Menu = () => {
+const Menu = ({ collapsed }) => {
     const darkMode = useDarkMode();
     const location = useLocation();
     
@@ -37,7 +49,7 @@ const Menu = () => {
     return (
         <ANTDMenu
             theme={ darkMode.on ? "dark" : "light" }
-            style={{ padding: "0 0.45rem" }}
+            mode={ collapsed ? "vertical" : "inline" }
             selectedKeys={[selectedKey]}
             items={items} 
         />
