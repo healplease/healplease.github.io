@@ -1,13 +1,17 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
+import { RouterProvider } from 'react-router-dom';
 
-import Router from './router';
+import router from './router';
 
-import './index.css';
+import './index.scss';
+import './assets/fonts/AllerDisplay.ttf';
+import './assets/fonts/AllerRegular.ttf';
+import './assets/fonts/AllerItalic.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <StrictMode>
-        <Router />
+        <RouterProvider router={router} />
     </StrictMode>
 );

@@ -4,11 +4,9 @@ import Home from "./components/pages/home/Home";
 import NotFound from "./components/pages/notFound/NotFound";
 
 
-const Router = createBrowserRouter({
-    routes: [
-        { path: "/", component: Home, exact: true },
-        { path: "*", component: NotFound }
-    ]
-});
+const router = createBrowserRouter([
+    { path: "/", element: <Home /> },
+    { path: "*", element: <NotFound /> }
+]);
 
-export default Router;
+export default router;
