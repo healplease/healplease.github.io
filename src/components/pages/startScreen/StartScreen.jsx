@@ -1,4 +1,5 @@
 import React from "react";
+import Moment from "react-moment";
 
 import logo from "../../../assets/images/osu-logo.png";
 import './start-screen.scss';
@@ -20,7 +21,7 @@ const classes = {
     startScreenMenuButton: "start-screen-menu-button",
 };
 
-const StartScreen = ({ logoPage, setLogoPage }) => {
+const StartScreen = ({ logoPage, setLogoPage, runningTime, currentTime }) => {
     const setLogoToCenter = () => {
         if (logoPage === 0) {
             setLogoPage(1);
@@ -29,7 +30,7 @@ const StartScreen = ({ logoPage, setLogoPage }) => {
 
     return (
         <main className={classes.startScreen}>
-            <div className={classes.startScreenTopLayer}>
+            <div className={`${classes.startScreenTopLayer} ${logoPage === 1 && 'show'}`}>
                 <div className={classes.info}>
                     <div className={classes.infoAccount}>
                         <img src={logo} alt="osu logo" className={classes.infoAccountAvatar} />
@@ -38,7 +39,14 @@ const StartScreen = ({ logoPage, setLogoPage }) => {
                         </div>
                     </div>
                     <div className={classes.infoTime}>
-                        test
+                        <div>You have 4 beatmaps available!</div>
+                        {logoPage === 1 && (<>
+                            <div>osu! has been running for {
+                                runningTime < 60 ? `${runningTime} seconds` :
+                                <Moment format="mm:ss">{runningTime * 1000}</Moment>
+                            }.</div>
+                            <div>It is currently <Moment format="HH:mm">{currentTime}</Moment>.</div>
+                        </>)}
                     </div>
                 </div>
                 <div className={classes.player}>
