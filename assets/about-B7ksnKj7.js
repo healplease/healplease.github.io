@@ -1,0 +1,1 @@
+import{_ as n,a as t}from"./MainLayout-DjKctv-U.js";import{c as e,w as s,o as r,a as c}from"./index-DQc2ZDjS.js";const _={components:{MainLayout:t},data:()=>({})};function p(u,o,i,m,f,l){const a=t;return r(),e(a,null,{default:s(()=>o[0]||(o[0]=[c(" my name is alex ")])),_:1})}const $=n(_,[["render",p]]);export{$ as default};
