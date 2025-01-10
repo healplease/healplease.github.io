@@ -1,6 +1,6 @@
 <template>
   <MainLayout>
-    hi :)
+    my name is alex
   </MainLayout>
 </template>
 
