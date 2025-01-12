@@ -2,11 +2,19 @@
   <MainLayout>
     <v-row>
       <v-col cols="12">
-        <h4 class="text-h4 mt-5 d-print-none">Everything You Need To Know</h4>
-        <p class="text-body-1 my-3 d-print-none">Yes, this counts as a CV</p>
+        <h4 class="text-h4 mt-5 d-print-none">
+          Everything You Need To Know
+        </h4>
+        <p class="text-body-1 my-3 d-print-none">
+          Yes, this counts as a CV
+        </p>
 
-        <h4 class="text-h4 mt-5 d-none d-print-block">Oleksii Hava</h4>
-        <p class="text-body-1 my-3 d-none d-print-block">Full-Stack Developer</p>
+        <h4 class="text-h4 mt-5 d-none d-print-block">
+          Oleksii Hava
+        </h4>
+        <p class="text-body-1 my-3 d-none d-print-block">
+          Full-Stack Developer
+        </p>
       </v-col>
     </v-row>
 
@@ -48,7 +56,7 @@
         >
           <v-divider />
           <v-card-text>
-
+            text
           </v-card-text>
         </v-card>
       </v-col>
@@ -56,7 +64,7 @@
         <v-card>
           <v-card-item>
             <v-card-title>
-              
+              text
             </v-card-title>
           </v-card-item>
         </v-card>
