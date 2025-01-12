@@ -29,6 +29,11 @@ router.onError((err, to) => {
   }
 })
 
+router.beforeEach((to, from) => {
+  const title = to.matched[to.matched.length - 1]?.components.default.title
+  document.title = title ? `${title} | Heal, Please!` : 'Heal, Please!'
+})
+
 router.isReady().then(() => {
   localStorage.removeItem('vuetify:dynamic-reload')
 })

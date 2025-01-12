@@ -1,7 +1,7 @@
 <template>
   <v-app-bar
     flat
-    class="bg-orange-darken-4"
+    class="bg-primary d-print-none"
   >
     <v-container class="mx-auto d-flex align-center justify-center">
       <v-btn
@@ -47,7 +47,11 @@ export default {
       {
         text: 'About',
         to: '/about',
-      }
+      },
+      {
+        text: 'Favorites',
+        to: '/favorites',
+      },
     ],
   }),
 }

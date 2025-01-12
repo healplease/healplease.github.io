@@ -1,6 +1,6 @@
 <template>
   <AppBar />
-  <v-container>
+  <v-container width="1280" class="print-container">
     <slot />
   </v-container>
 </template>
@@ -16,3 +16,11 @@ export default {
   }),
 }
 </script>
+
+<style>
+.print-container {
+  @media print {
+    max-width: 980px;
+  }
+}
+</style>
