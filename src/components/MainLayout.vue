@@ -1,12 +1,8 @@
 <template>
-  <v-app id="inspire">
-    <AppBar />
-    <v-main>
-      <v-container>
-        <slot />
-      </v-container>
-    </v-main>
-  </v-app>
+  <AppBar />
+  <v-container>
+    <slot />
+  </v-container>
 </template>
 
 <script>
