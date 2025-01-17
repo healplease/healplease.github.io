@@ -1,6 +1,9 @@
 <template>
   <AppBar />
-  <v-container width="1280" class="print-container">
+  <v-container
+    :width="containerWidth"
+    class="print-container"
+  >
     <slot />
   </v-container>
 </template>
@@ -11,9 +14,20 @@ export default {
   components: {
     AppBar,
   },
+  props: {
+    wide: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data: () => ({
     
   }),
+  computed: {
+    containerWidth() {
+      return this.wide ? '100%' : '1280'
+    },
+  },
 }
 </script>
 
