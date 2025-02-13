@@ -14,9 +14,20 @@ export default {
   components: {
     AppBar,
   },
+  props: {
+    wide: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data: () => ({
     
   }),
+  computed: {
+    containerWidth() {
+      return this.wide ? '100%' : '1280'
+    },
+  },
 }
 </script>
 

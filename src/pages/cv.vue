@@ -37,11 +37,11 @@
                   elevation="3"
                   rounded="lg"
                 >
-                  <v-card-subtitle class="bg-primary">
-                    <p class="text-subtitle my-2">
+                  <v-card-title class="text-body-2 bg-primary">
+                    <p>
                       {{ card.title }}
                     </p>
-                  </v-card-subtitle>
+                  </v-card-title>
                   <v-divider />
                   <v-card-text>
                     {{ card.text }}
@@ -125,11 +125,92 @@
         >
           <v-divider />
           <v-card-text>
-            <v-row>
-              <v-col cols="12">
-                I hereby forbid you to contact me.
+            <v-row
+              justify="space-evenly"
+              class="d-print-none"
+            >
+              <v-col
+                class="text-center"
+              >
+                <a
+                  href="mailto:gavaalex2012@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <v-icon
+                    color="primary"
+                    size="72"
+                  >
+                    mdi-gmail
+                  </v-icon>
+                </a>
+              </v-col>
+              <v-col
+                class="text-center"
+              >
+                <a
+                  href="https://www.linkedin.com/in/healplease"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <v-icon
+                    color="primary"
+                    size="72"
+                  >
+                    mdi-linkedin
+                  </v-icon>
+                </a>
+              </v-col>
+              <v-col
+                class="text-center"
+              >
+                <a
+                  href="https://www.github.com/healplease"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <v-icon
+                    color="primary"
+                    size="72"
+                  >
+                    mdi-github
+                  </v-icon>
+                </a>
               </v-col>
             </v-row>
+
+            <v-card-text class="d-none d-print-block">
+              <v-row class="mb-2">
+                <v-icon
+                  color="primary"
+                  size="24"
+                  class="me-2"
+                >
+                  mdi-gmail
+                </v-icon>
+                <span class="pt-1">gavaalex2012@gmail.com</span>
+              </v-row>
+              <v-row class="mb-2">
+                <v-icon
+                  color="primary"
+                  size="24"
+                  class="me-2"
+                >
+                  mdi-linkedin
+                </v-icon>
+                <span class="pt-1">linkedin.com/in/healplease</span>
+              </v-row>
+              <v-row>
+                <v-icon
+                  color="primary"
+                  size="24"
+                  class="me-2"
+                >
+                  mdi-github
+                </v-icon>
+                <span class="pt-1">github.com/healplease</span>
+              </v-row>
+            </v-card-text>
           </v-card-text>
         </v-card>
 
