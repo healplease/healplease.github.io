@@ -1,6 +1,6 @@
 <template>
   <MainLayout>
-    my favorite things
+    
   </MainLayout>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   components: {
     MainLayout,
   },
-  title: 'Favorites',
+  title: 'Baazar Builder',
   data: () => ({
     
   }),

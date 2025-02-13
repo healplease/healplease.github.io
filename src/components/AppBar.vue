@@ -45,12 +45,12 @@ export default {
         to: '/',
       },
       {
-        text: 'About',
-        to: '/about',
+        text: 'Bazaar Builder',
+        to: '/bazaar-builder',
       },
       {
-        text: 'Favorites',
-        to: '/favorites',
+        text: 'CV',
+        to: '/cv',
       },
     ],
   }),

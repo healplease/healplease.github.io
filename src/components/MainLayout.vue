@@ -1,6 +1,9 @@
 <template>
   <AppBar />
-  <v-container width="1280" class="print-container">
+  <v-container 
+    width="1280"
+    class="print-container"
+  >
     <slot />
   </v-container>
 </template>

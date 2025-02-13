@@ -148,7 +148,6 @@
             </v-row>
           </v-card-text>
         </v-card>
-
       </v-col>
     </v-row>
   </MainLayout>
@@ -160,7 +159,7 @@ export default {
   components: {
     MainLayout,
   },
-  title: 'About',
+  title: 'CV',
   data: () => ({
     summaryCards: [
       {
@@ -226,7 +225,7 @@ export default {
         title: 'Software Developer',
         company: 'SoftServe, Inc.',
         date: 'Dec 2021 - Aug 2022',
-        client: 'Next-generation service provider for medical companies and other facilities.',
+        client: 'Broadband connection provider in the UK.',
         responsibilities: 'Creating and supporting solutions for the Inventory Management of infrastructure.',
         stack: [
           'Django',
